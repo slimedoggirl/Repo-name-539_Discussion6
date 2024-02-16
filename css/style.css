@@ -1,0 +1,135 @@
+body{
+   line-height: 1.5;
+}
+
+
+header, nav{
+    margin: 5px;
+    padding: 50px 25px 20px 25px;
+
+}
+nav ul li{
+    /* Set display, margin, padding, font-size, background-color */
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 15px 10px 15px;
+    font-size: 16px;
+    background-color: #fbcbe3;
+
+}
+
+nav a{
+    /* Set text decoration*/
+    text-decoration: none;
+}
+
+a:visited{
+    /* Set color */
+    color: black;
+
+}
+
+nav a.current{
+    /* Set text decoration, transformation, and underline properties */
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: 10px;
+    color: rgb(204, 0, 0);
+}
+
+
+h1{
+   font-family: 'Courier New', Courier, monospace;
+   font-size: 48px;
+
+}
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 36px;
+}
+
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+
+
+}
+
+h1, h2, h3{
+    /*Set margin */
+    margin: 15px;
+}
+.grid{
+    /*Set width, margin, border properties, background color, and grid properties */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    margin: 0 auto;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.grid div{
+    /* Set border properties, padding, and background color */
+    border: black solid 3px;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: white;
+}
+
+.grid img{
+    /* Set width, margin, and display */
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    margin: 3%;
+}
+
+
+.grid div:nth-child(3n+1)  {
+    /* Set box shadow */
+    }
+
+.grid div:nth-child(3n)  {
+    /* Set box shadow */ 
+}
+
+.grid div:nth-child(3n+2)  {
+     /* Set box shadow */
+}
+    
+
+p + p {
+     /* Set indentation */
+  }
+  
+p{
+     /* Set margin */
+}
+
+
+.grid ul li{
+    /* Set margin, line-spacing, list styling  */
+}
+
+@media (min-width: 769px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 90%;
+        margin: 0 auto;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+
+    .grid img{
+        /* Set width, margin, and display */
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        border: black solid 3px;
+        border-radius: 20px;
+    }
+}
